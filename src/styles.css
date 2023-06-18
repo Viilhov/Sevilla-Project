@@ -1,16 +1,62 @@
-h1 {
-  font-family: "Poppins";
-  font-style: normal;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/sevilla.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 300px 0;
+}
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
-  text-align: center;
+  line-height: 1;
+  margin: 0;
 }
-h4 {
-  font-family: "Poppins";
-  font-style: normal;
+header h3 {
   font-weight: 400;
   font-size: 40px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1;
+  margin: 30px 0;
+}
+header p {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #272044;
+  padding: 16px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-top: 32px;
+}
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 48px;
+  }
+  header h3 {
+    font-size: 22px;
+  }
+  header p {
+    font-size: 16px;
+  }
 }
