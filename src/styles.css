@@ -3,7 +3,7 @@ body {
   background: rgb(230, 229, 229);
 }
 .container {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 section {
@@ -107,12 +107,19 @@ main p {
 .grid-three-col {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.card-heading.grid {
+  grid-gap: 0;
+}
 .card {
   background-color: #fff;
   margin: 80px 0;
 }
 .card-body {
   padding: 24px 32px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 h4 {
   font-weight: 700;
@@ -194,5 +201,15 @@ footer .end {
   }
   section {
     padding: 30px;
+  }
+  .card-heading img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .card {
+    margin-bottom: 0px;
+    margin-top: 20px;
   }
 }
